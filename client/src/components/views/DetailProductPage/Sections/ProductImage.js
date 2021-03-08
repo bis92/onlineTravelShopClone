@@ -10,8 +10,8 @@ function ProductImage(props) {
     if (props.detail.images && props.detail.images.length > 0) {
       props.detail.images.map((image) =>
         images.push({
-          original: `http://localhost:5000/${image}`,
-          thumbnail: `http://localhost:5000/${image}`,
+          original: `https://travelshopping.herokuapp.com/${image}`,
+          thumbnail: `https://travelshopping.herokuapp.com/${image}`,
         })
       );
       setImages(images);
